@@ -1,5 +1,9 @@
 from django.db import models
+from django.template.context_processors import request
 from django.utils import timezone
+from django.contrib.auth import login, authenticate
+from django.contrib.auth.models import User
+
 
 # Create your models here.
 
@@ -17,3 +21,5 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+# class SignUp(request)
